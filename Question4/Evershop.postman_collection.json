@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "f773dbc8-fa59-47b3-a010-d79e6f8d0bde",
+		"name": "Evershop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38124467"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Small_Black",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add_To_Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1916720525.1731256221; sid=s%3AEqlxR-u4Qk8btBuwDzw6G8g5SR9rVO2s.ws1y9KBN5Vv6%2BtmQRC1tUCKoCylPOt1iFZR5v%2BTUzc0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sku\": \"NJC48508-Black-X\", \r\n \"qty\": \"1\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/mine/items?ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"mine",
+						"items"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.2.1916720525.1731256221; sid=s%3AbOxjgZybjRv6KWznvyWXCjc8M0hOUGhv.%2BqqA1X3qsamlua0eLhdJ1JT%2FJzH9E6opNXQ9ONUfYDs; _gid=GA1.2.330312230.1731516934",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"qty\": 1, \r\n\"action\": \"increase\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/7de21b6a-ee08-4bd0-a8f7-957128b49ae1/items/9b8e97a9-89d2-4f25-85c2-c4d98cd5f985?ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"7de21b6a-ee08-4bd0-a8f7-957128b49ae1",
+						"items",
+						"9b8e97a9-89d2-4f25-85c2-c4d98cd5f985"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VerifyCart",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
