@@ -5,6 +5,8 @@ Here is a manusl task in both UI and API level.So the main focus is  system test
 
 # Give task ASSESMENT
 Q1|[Mark 20] You have a shoe-selling e-commerce platform. Now, the client wants to implement a new feature "Search". During the client meeting, they mentioned they wanted to make the search dynamic, with any keywords, or specific text. Now you have a chance to get into more details on the feature. You can ask 10 questions to the client. List the questions according to priority.
+
+
 Q2|[Mark 20] Write down the test cases according to your questions.
 
 
